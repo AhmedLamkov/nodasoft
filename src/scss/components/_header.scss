@@ -1,0 +1,22 @@
+.header {
+	display: flex;
+	width: 100%;
+	margin: 0 auto;
+	padding: 30px;
+	box-sizing: border-box;
+	background-color: #7faff7;
+	margin-bottom: 15px;
+
+	&__button {
+		padding: 8px 15px;
+		font-size: 20px;
+		line-height: 23px;
+		background: #a5c7f9;
+		border: none;
+
+		a {
+			text-decoration: none;
+			color: #ffffff;
+		}
+	}
+}

@@ -1,0 +1,44 @@
+.green {
+	margin-bottom: 15px;
+	&__wrapper {
+		display: grid;
+		grid-auto-rows: 198px;
+		gap: 15px;
+		counter-reset: line-number;
+		background: #b3f95a;
+	}
+
+	&__block {
+		counter-increment: line-number;
+		background: #8ad191;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		color: white;
+		font-size: 53px;
+		line-height: 62px;
+	}
+	&__block1 {
+		grid-column-start: 1;
+		grid-column-end: 3;
+	}
+	&__block2 {
+		grid-column-start: 3;
+		grid-column-end: 7;
+	}
+	&__block3 {
+		grid-column-start: 7;
+		grid-column-end: 8;
+	}
+	&__block4 {
+		grid-column-start: 1;
+		grid-column-end: 7;
+	}
+	&__block5 {
+		grid-column-start: 7;
+		grid-column-end: 8;
+	}
+	&__block::before {
+		content: counter(line-number) "";
+	}
+}
